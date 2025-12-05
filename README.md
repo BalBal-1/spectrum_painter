@@ -1,3 +1,5 @@
+This is a fork from the original specturm_painter
+
 # Spectrum Painter
 
 A tool to converts images to IQ streams that look like this when viewed in a waterfall plot.
@@ -92,8 +94,3 @@ spectrum_painter -s 1000000 -l 0.004 -o smiley.iqblade --format bladerf examples
 
 The output can be used in bladeRF-cli with bin format.
 
-# Closing
-
-This was a fun project at this years [Chaos Communication Camp](https://events.ccc.de/camp/2015/wiki/Main_Page). It even works with a spectrum analyzer on the awesome rad1obadge ;).
-
-![rad1o example](doc/rad1o.jpg)
