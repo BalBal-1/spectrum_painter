@@ -69,7 +69,7 @@ class BladeOut(GenericFloat):
         intlv = self.convert(complex_iq)
         bladeout = Popen(['bladeout', '-f', str(self.frequency), '-r', str(self.samplerate), '-b', str(self.bandwidth),
                           '-g', str(self.txvga1), '-G', str(self.txvga2)], stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        stdout = bladeout.communicate(input=intlv.tostring())
+        stdout = bladeout.communicate(input=intlv.tobytes())
         return stdout
 
 
